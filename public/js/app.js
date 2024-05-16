@@ -9,7 +9,7 @@ const dateElement = document.querySelector(".date");
 
 const currentDate = new Date();
 const monthName = currentDate.toLocaleString("en-US", { month: "long" });
-dateElement.textContent = `${new Date().getDate()}, ${monthName}`;
+dateElement.textContent = `${new Date().getDate()} ${monthName}`;
 
 weatherForm.addEventListener("submit", handleFormSubmit);
 
