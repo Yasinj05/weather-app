@@ -8,7 +8,9 @@ This Weather App is a simple web application that allows users to check the curr
 - **Search Functionality:** Users can search for the weather condition of any city by entering its name in the search bar.
 - **Geolocation Support:** The app can automatically detect the user's location using geolocation and display the weather condition accordingly.
 
-## Installation 📥
+# Installation 📥
+
+## Local Setup
 
 To run the Weather App locally, follow these steps:
 
@@ -46,6 +48,46 @@ Replace `<your-openweathermap-api-key>` with your OpenWeatherMap API key.
 
 ```
 npm start
+```
+
+6. Access the Weather App:
+
+Open your web browser and navigate to `http://localhost:3000`.
+
+## Docker Setup
+
+1. Clone the repository:
+
+```
+git clone https://github.com/yourusername/weather-app.git
+```
+
+2. Navigate to the project directory:
+
+```
+cd weather-app
+```
+
+3. Create a `.env` file in the root directory and add your environment variables:
+
+```
+PORT=3000
+BASE_URL=https://api.openweathermap.org/data/2.5/weather?units=metric&appid=
+SECRET_KEY=<your-openweathermap-api-key>
+```
+
+Replace `<your-openweathermap-api-key>` with your OpenWeatherMap API key.
+
+4. Build the Docker image:
+
+```
+docker build -t weather-app .
+```
+
+5. Run the Docker container:
+
+```
+docker run -d -p 3000:3000 --env-file .env weather-app
 ```
 
 6. Access the Weather App:
