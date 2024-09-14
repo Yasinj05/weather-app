@@ -46,5 +46,5 @@ function handleWeatherRequest(req, res) {
 }
 
 function renderNotFound(req, res) {
-  res.render("404", { title: "Page not found" });
+  res.render("404", { title: "Page not found!!" });
 }
