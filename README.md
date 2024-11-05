@@ -92,7 +92,7 @@ docker run -d -p 3000:3000 --env-file .env weather-app
 
 6. Access the Weather App:
 
-Open your web browser and navigate to `http://localhost:3000`.
+Open your web browser and navigate to `http://localhost:your-port`.
 
 ## Usage
 
