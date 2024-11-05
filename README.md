@@ -37,7 +37,7 @@ npm install
 Create a `.env` file in the root directory and add the following variables:
 
 ```
-PORT=3000
+PORT=your-port
 BASE_URL=https://api.openweathermap.org/data/2.5/weather?units=metric&appid=
 SECRET_KEY=<your-openweathermap-api-key>
 ```
